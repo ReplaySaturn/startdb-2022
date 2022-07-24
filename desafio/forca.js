@@ -27,12 +27,12 @@ class Forca {
 
   regras(letra) {
 
-    if(!this.palavraSecreta.split("").includes(letra) &&
+    if (!this.palavraSecreta.split("").includes(letra) &&
     this.letrasChutadas.includes(letra)) {
       console.log("A letra já foi chutada"); 
       return true; // Regra 4: Verificar se a letra já foi chutada posteriormente
     }
-    if(this.palavraSecreta.split("").includes(letra) &&
+    if (this.palavraSecreta.split("").includes(letra) &&
     this.letrasChutadas.includes(letra)) {
       console.log("A letra já foi chutada"); 
       return true; // Regra 4
